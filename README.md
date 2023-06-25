@@ -2,6 +2,12 @@
 
 This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+## Links
+
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-tailwindcss-no-js-geh1mYQTP6)
+- Live Site URL: [Link here](https://chaninlaw.github.io/FM_pricing-component-with-toggle/)
+
+
 ## Table of contents
 
 - [Frontend Mentor - Pricing component with toggle solution](#frontend-mentor---pricing-component-with-toggle-solution)
@@ -41,11 +47,6 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-tailwindcss-no-js-geh1mYQTP6))
-- Live Site URL: [Link here]([https://your-live-site-url.com](https://chaninlaw.github.io/FM_pricing-component-with-toggle/))
 
 ## My process
 
