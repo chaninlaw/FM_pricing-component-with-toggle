@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Pricing Component with toggle</title>
+</head>
+
+<body class="font-['Montserrat'] text-[15px] bg-[#f7f7ff] relative">
+  <main class="container mx-auto min-h-screen z-10 text-[#6d6d86] peer">
+    <!-- Subscription Card Section -->
+    <section class="">
+      <!-- Heading -->
+      <h1 class="text-4xl pt-16 text-center">Our Pricing</h1>
+
+      <!-- Toggle -->
+      <input id="toggle" type="checkbox" class="sr-only peer" />
+      <label for="toggle"
+        class="relative flex justify-center items-center cursor-pointer my-12 w-11 mx-auto space-x-20 h-6 bg-gradient-to-r from-[#a1a4f1] to-[#6d71df] rounded-full hover:bg-gradient-to-b hover:from-[#c9caf7] hover:to-[#c2c4f5] dark:bg-gray-700 transition-all peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 ">
+        <span class="text-sm font-medium text-gray-400">Annually</span>
+        <span class="text-sm font-medium text-gray-400">Monthly</span>
+      </label>
+
+      <div
+        class="flex flex-col justify-center items-center md:flex-row peer-checked:[&_.annual]:hidden peer-checked:[&_.monthly]:flex">
+        <!-- Basic Subscription Card -->
+        <div class="h-[400px] w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
+          <h2 class="text-xl mt-3">Basic</h2>
+          <p class="hidden text-5xl py-5 text-[#494f5f] items-center monthly"><span
+              class="text-3xl">&dollar;</span>19.99
+          </p>
+          <p class="flex py-5 text-5xl text-[#494f5f] items-center annual"><span class="text-3xl">&dollar;</span>199.99
+          </p>
+          <div class="space-y-3 w-3/4 text-center">
+            <hr>
+            <p>500 GB Storage</p>
+            <hr>
+            <p>2 Users Allowed</p>
+            <hr>
+            <p>Send up to 3 GB</p>
+            <hr>
+          </div>
+          <button
+            class="bg-gradient-to-r from-[#a1a4f1] to-[#6d71df] rounded-md w-3/4 p-3 my-5 uppercase text-white tracking-widest text-sm hover:bg-none hover:border-[#6d71df] border hover:text-[#6d71df] hover:transition-all">
+            Learn more
+          </button>
+        </div>
+        <!-- Professional Subscription Card -->
+        <div
+          class="h-[450px] text-white w-[450px] bg-gradient-to-b from-[#a1a4f1] to-[#6d71df] rounded-lg flex flex-col items-center justify-center">
+          <h2 class="text-xl">Professional</h2>
+          <p class="text-5xl py-5 hidden items-center monthly"><span class="text-3xl">&dollar;</span>24.99</p>
+          <p class="flex text-5xl py-5 items-center annual"><span class="text-3xl">&dollar;</span>249.99</p>
+          <div class="space-y-3 w-3/4 text-center">
+            <hr class="border-gray-200 border-opacity-50">
+            <p>1 TB Storage</p>
+            <hr class="border-gray-200 border-opacity-50">
+            <p>5 Users Allowed</p>
+            <hr class="border-gray-200 border-opacity-50">
+            <p>Send up to 10 GB</p>
+            <hr class="border-gray-200 border-opacity-50">
+          </div>
+          <button
+            class="text-[#6e72de] rounded-md w-3/4 p-3 my-5 uppercase bg-white tracking-widest text-sm border hover:bg-transparent hover:border-white hover:text-white hover:transition-all">Learn
+            more</button>
+        </div>
+        <!-- Master Subscription Card -->
+        <div class="h-[400px] w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
+          <h2 class="text-xl mt-3">Master</h2>
+          <p class="hidden text-5xl py-5 text-[#494f5f] items-center monthly"><span
+              class="text-3xl">&dollar;</span>39.99
+          </p>
+          <p class="flex py-5 text-5xl text-[#494f5f] items-center annual"><span class="text-3xl">&dollar;</span>399.99
+          </p>
+          <div class="space-y-3 w-3/4 text-center">
+            <hr>
+            <p>2 TB Storage</p>
+            <hr>
+            <p>10 Users Allowed</p>
+            <hr>
+            <p>Send up to 20 GB</p>
+            <hr>
+          </div>
+          <button
+            class="bg-gradient-to-r from-[#a1a4f1] to-[#6d71df] rounded-md w-3/4 p-3 my-5 uppercase text-white tracking-widest text-sm hover:bg-none hover:border-[#6d71df] border hover:text-[#6d71df] hover:transition-all">Learn
+            more</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <svg class="absolute top-0 right-0 -z-10" xmlns="http://www.w3.org/2000/svg" width="375" height="658">
+    <g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2">
+      <path
+        d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126" />
+      <path
+        d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141" />
+      <path
+        d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108" />
+    </g>
+  </svg>
+  <svg class="absolute bottom-0 left-0 -z-10" xmlns="http://www.w3.org/2000/svg" width="353" height="304">
+    <g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2">
+      <path
+        d="M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126" />
+      <path
+        d="M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859" />
+      <path
+        d="M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892" />
+    </g>
+  </svg>
+</body>
+
+</html>
