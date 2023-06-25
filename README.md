@@ -44,8 +44,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-tailwindcss-no-js-geh1mYQTP6))
+- Live Site URL: [Link here]([https://your-live-site-url.com](https://chaninlaw.github.io/FM_pricing-component-with-toggle/))
 
 ## My process
 
