@@ -15,11 +15,11 @@
 </head>
 
 <body class="font-['Montserrat'] text-[15px] bg-[#f7f7ff] relative">
-  <main class="container mx-auto min-h-screen z-10 text-[#6d6d86] peer">
+  <main class="container mx-auto py-10 min-h-screen z-10 text-[#6d6d86] peer">
     <!-- Subscription Card Section -->
     <section class="">
       <!-- Heading -->
-      <h1 class="text-4xl pt-16 text-center">Our Pricing</h1>
+      <h1 class="text-4xl pt-14 text-center">Our Pricing</h1>
 
       <!-- Toggle -->
       <input id="toggle" type="checkbox" class="sr-only peer" />
@@ -30,9 +30,9 @@
       </label>
 
       <div
-        class="flex flex-col justify-center items-center md:flex-row peer-checked:[&_.annual]:hidden peer-checked:[&_.monthly]:flex">
+        class="flex flex-col space-y-5 justify-center items-center md:flex-row peer-checked:[&_.annual]:hidden peer-checked:[&_.monthly]:flex">
         <!-- Basic Subscription Card -->
-        <div class="h-[400px] w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
+        <div class="h-[400px] w-[350px] md:w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
           <h2 class="text-xl mt-3">Basic</h2>
           <p class="hidden text-5xl py-5 text-[#494f5f] items-center monthly"><span
               class="text-3xl">&dollar;</span>19.99
@@ -55,7 +55,7 @@
         </div>
         <!-- Professional Subscription Card -->
         <div
-          class="h-[450px] text-white w-[450px] bg-gradient-to-b from-[#a1a4f1] to-[#6d71df] rounded-lg flex flex-col items-center justify-center">
+          class="h-[450px] text-white w-[350px] md:w-[450px] bg-gradient-to-b from-[#a1a4f1] to-[#6d71df] rounded-lg flex flex-col items-center justify-center">
           <h2 class="text-xl">Professional</h2>
           <p class="text-5xl py-5 hidden items-center monthly"><span class="text-3xl">&dollar;</span>24.99</p>
           <p class="flex text-5xl py-5 items-center annual"><span class="text-3xl">&dollar;</span>249.99</p>
@@ -73,7 +73,7 @@
             more</button>
         </div>
         <!-- Master Subscription Card -->
-        <div class="h-[400px] w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
+        <div class="h-[400px] w-[350px] md:w-[450px] bg-white rounded-lg flex flex-col items-center justify-center">
           <h2 class="text-xl mt-3">Master</h2>
           <p class="hidden text-5xl py-5 text-[#494f5f] items-center monthly"><span
               class="text-3xl">&dollar;</span>39.99
